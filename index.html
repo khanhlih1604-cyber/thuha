@@ -10,6 +10,24 @@
 
 <!-- Nhúng liên kết trực tiếp tới file style.css -->
 <link rel="stylesheet" href="style.css">
+
+<!-- Ghi đè bố cục phần bài tập thành lưới 2 cột cố định (1-2 / 3-4 / 5-6) -->
+<style>
+  .work-masonry{
+    column-count: initial !important;
+    columns: initial !important;
+    display: grid !important;
+    grid-template-columns: 1fr 1fr !important;
+    gap: 24px !important;
+  }
+  .work-masonry .work-card{
+    break-inside: avoid;
+    margin: 0 !important;
+  }
+  @media (max-width: 760px){
+    .work-masonry{ grid-template-columns: 1fr !important; }
+  }
+</style>
 </head>
 <body>
 
@@ -24,7 +42,7 @@
       </div>
     </div>
     <h1 class="side-name">Phạm Hải<br>Thu Hà</h1>
-    <p class="side-sub">Kinh tế Quốc tế 🎓</p>
+    <p class="side-sub">Kinh tế Quốc tế</p>
     <span class="side-chip">MSV: 25050896</span>
     <span class="side-chip">ĐH Kinh tế - ĐHQGHN</span>
 
@@ -36,7 +54,7 @@
 
     <div class="side-footer">
       <a href="https://drive.google.com/drive/folders/1xURIUSXQY7zNarGjJpn5b52b9mO7bxFn?usp=drive_link" class="drive-btn">📁 Tổng hợp bài tập</a>
-      <p class="side-stamp">✈️ made with 🌷<br>tại Đại học Kinh tế - ĐHQGHN</p>
+      <p class="side-stamp">Website có sử dụng AI hỗ trợ tối ưu trên tinh thần tuân thủ liêm chính học thuật</p>
     </div>
   </aside>
 
@@ -46,16 +64,16 @@
       <div class="tape tl"></div><div class="tape tr"></div>
       <span class="eyebrow">🌷 Portfolio cá nhân</span>
       <span class="greet-en">Nice to meet you!</span>
-      <h1>Xin chào, mình là <span>Phạm Hải Thu Hà</span> 🌷</h1>
-      <p>Sinh viên ngành <b>Kinh tế quốc tế</b> tại <b>Trường Đại học Kinh tế - Đại học Quốc gia Hà Nội</b>. Portfolio này là nơi mình ghi lại hành trình làm quen với công nghệ số trong học kỳ đầu tiên - từ những thao tác tưởng chừng đơn giản như sắp xếp tệp tin, đến việc tập vận dụng trí tuệ nhân tạo vào tra cứu số liệu và trình bày ý tưởng. Với mình, mỗi bài thực hành là một bước tập dượt nhỏ cho hành trình trở thành một người làm kinh tế trẻ - nhạy bén với con số nhưng vẫn không ngừng sáng tạo.</p>
+      <h1>Xin chào, tôi là <span>Phạm Hải Thu Hà</span></h1>
+      <p>Sinh viên ngành <b>Kinh tế quốc tế</b> tại <b>Trường Đại học Kinh tế - Đại học Quốc gia Hà Nội</b>. Portfolio này là nơi tôi ghi lại hành trình làm quen với công nghệ số trong học kỳ đầu tiên - từ những thao tác tưởng chừng đơn giản như sắp xếp tệp tin, đến việc tập vận dụng trí tuệ nhân tạo vào tra cứu số liệu và trình bày ý tưởng.</p>
       <div class="intro-grid">
         <div class="intro-card">
           <h3>💗 Sở thích</h3>
-          <p>Mình thích đọc tin tức kinh tế, tìm hiểu về thị trường và các xu hướng tài chính, đồng thời cũng yêu những khoảnh khắc đời thường như pha một tách trà, nghe nhạc nhẹ nhàng hay xem phim để thư giãn sau giờ học. Mình tin sự cân bằng giữa lý trí và cảm xúc sẽ giúp việc học hiệu quả hơn.</p>
+          <p>Tôi yêu thích việc học ngôn ngữ và tìm tòi những điều mới lạ từ những nền văn hóa khác nhau. Đồng thời là một sinh viên thuộc khối ngành kinh tế, tôi cũng dần tự hình thành cho mình thói quen cập nhật các tin tức về logistics và chuỗi cung ứng hay thị trường tài chính. Tôi tin rằng sự tích lũy kiến thức qua từng ngày là một thói quen đúng đắn để phát triển bản thân.</p>
         </div>
         <div class="intro-card">
           <h3>🎯 Mục tiêu môn học</h3>
-          <p>Mục tiêu của mình khi học môn này là làm quen và dần làm chủ các công cụ số, biến AI thành một trợ lý đắc lực trong việc tra cứu số liệu, phân tích xu hướng và trình bày báo cáo một cách trực quan, đồng thời luôn đảm bảo sử dụng công nghệ minh bạch, trung thực và có trách nhiệm.</p>
+          <p>Mục tiêu của tôi khi học môn này là làm quen và dần làm chủ các công cụ số, biến AI thành một trợ lý đắc lực trong việc tra cứu số liệu, phân tích xu hướng và trình bày báo cáo một cách trực quan, đồng thời luôn đảm bảo sử dụng công nghệ minh bạch, trung thực và có trách nhiệm.</p>
         </div>
       </div>
       <p class="quote-en">"Numbers tell a story, if you know how to listen."</p>
@@ -146,19 +164,19 @@
         <div class="reflect-journal">
           <div class="reflect-entry reveal">
             <div class="entry-head"><span class="entry-num">01</span><h3>🔑 Bài học cốt lõi</h3></div>
-            <p>Qua môn học, mình nhận ra công nghệ và AI là công cụ hỗ trợ đắc lực, nhưng khả năng tư duy phản biện, đọc hiểu và diễn giải số liệu mới là điều quyết định giá trị của một báo cáo kinh tế. Máy móc có thể tính toán nhanh, nhưng góc nhìn và sự nhạy bén với thị trường vẫn cần đến con người.</p>
+            <p>Qua môn học, tôi nhận ra công nghệ và AI là công cụ hỗ trợ đắc lực, nhưng khả năng tư duy phản biện, đọc hiểu và diễn giải số liệu mới là điều quyết định giá trị của một báo cáo kinh tế. Máy móc có thể tính toán nhanh, nhưng góc nhìn và sự nhạy bén với thị trường vẫn cần đến con người.</p>
           </div>
           <div class="reflect-entry reveal">
             <div class="entry-head"><span class="entry-num">02</span><h3>🌱 Sự thay đổi của bản thân</h3></div>
-            <p>Nhìn lại cả chặng đường, mình thấy bản thân đã tự tin hơn rất nhiều khi làm việc với các công cụ số. Từ một người còn khá bỡ ngỡ với công nghệ, mình dần biết cách khai thác AI để hỗ trợ việc học, đồng thời hiểu rõ giới hạn để không phụ thuộc hoàn toàn vào nó.</p>
+            <p>Nhìn lại cả chặng đường, tôi thấy bản thân đã tự tin hơn rất nhiều khi làm việc với các công cụ số. Từ một người còn khá bỡ ngỡ với công nghệ, tôi dần biết cách khai thác AI để hỗ trợ việc học, đồng thời hiểu rõ giới hạn để không phụ thuộc hoàn toàn vào nó.</p>
           </div>
           <div class="reflect-entry reveal">
             <div class="entry-head"><span class="entry-num">03</span><h3>💭 Cảm nghĩ sau khi hoàn thiện</h3></div>
-            <p>Hoàn thành portfolio này, mình cảm thấy khá tự hào vì đã kiên trì đi hết chặng đường. Đây không chỉ là một bài tập môn học, mà còn là dịp để mình nhìn lại và trân trọng những nỗ lực nhỏ bé của bản thân trong học kỳ đầu tiên tại giảng đường đại học.</p>
+            <p>Hoàn thành portfolio này, tôi cảm thấy rất tự hào khi không chỉ tạo dựng được không gian thể hiện năng lực cá nhân, mà còn có cơ hội nhìn lại trọn vẹn hành trình nỗ lực của bản thân. Dù các bài tập không quá đánh đố, học phần Nhập môn Công nghệ số và Ứng dụng Trí tuệ nhân tạo đòi hỏi ở người học sự kiên trì và tỉ mỉ nhất định. Chính vì vậy, tôi xin gửi lời biết ơn đến các thầy cô giảng viên đã xây dựng một lộ trình học đầy tính thực tiễn, giúp lý thuyết không còn nằm trên sách vở mà thực sự gắn liền với ứng dụng đời sống.</p>
           </div>
           <div class="reflect-entry reveal">
             <div class="entry-head"><span class="entry-num">04</span><h3>🌟 Định hướng tương lai</h3></div>
-            <p>Mình mong muốn tiếp tục vận dụng những kỹ năng số đã học được vào việc học chuyên ngành Kinh tế quốc tế, đặc biệt trong việc tra cứu số liệu, phân tích thị trường và trình bày báo cáo một cách chuyên nghiệp, chỉn chu hơn trong những học kỳ tiếp theo.</p>
+            <p>Từ những nền tảng công nghệ số đã tích lũy, tôi hướng tới việc tiếp tục trau dồi các kỹ năng số thiết yếu, đặc biệt là năng lực khai thác số liệu và trình bày báo cáo chuyên nghiệp, chỉn chu hơn trong những học kỳ tiếp theo.</p>
           </div>
         </div>
       </div>
